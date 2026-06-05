@@ -1,30 +1,30 @@
 # 📚 Sistema BiblioTech
 
-[cite_start]O *BiblioTech* é um Sistema de Informação Web focado na gestão automatizada do acervo e empréstimos da *Biblioteca Central Dom Malan*[cite: 1, 2]. [cite_start]O projeto visa substituir o controle manual feito por fichas de papel e planilhas soltas, otimizando o tempo de atendimento e garantindo o controle do estoque em tempo real[cite: 3, 4, 5].
+[cite_start]O *BiblioTech* é um Sistema de Informação Web focado na gestão automatizada do acervo e empréstimos da *Biblioteca Central Dom Malan. O projeto visa substituir o controle manual feito por fichas de papel e planilhas soltas, otimizando o tempo de atendimento e garantindo o controle do estoque em tempo real.
 
 ## 📊 Classificação do Sistema
-* [cite_start]*Tipo:* SPT (Sistema de Processamento de Transações)[cite: 7].
-* [cite_start]*Justificativa:* O foco do sistema é puramente operacional e prático, registrando de forma rápida e segura as atividades diárias e repetitivas da biblioteca (cadastrar livros, realizar empréstimos e confirmar devoluções)[cite: 8, 9].
+* *Tipo:* SPT (Sistema de Processamento de Transações).
+* *Justificativa:* O foco do sistema é puramente operacional e prático, registrando de forma rápida e segura as atividades diárias e repetitivas da biblioteca (cadastrar livros, realizar empréstimos e confirmar devoluções).
 
 ## 💡 Benefícios Esperados
-* [cite_start]Eliminação total do uso de papel e planilhas desorganizadas[cite: 30].
-* [cite_start]Atendimento no balcão até 80% mais rápido[cite: 31].
-* [cite_start]Controle exato das datas de devolução, reduzindo o sumiço de livros[cite: 32].
+* Eliminação total do uso de papel e planilhas desorganizadas.
+* Atendimento no balcão até 80% mais rápido.
+* Controle exato das datas de devolução, reduzindo o sumiço de livros.
 
 ---
 
 ## 🛠️ Tecnologias Envolvidas
-* [cite_start]*Banco de Dados:* MySQL[cite: 27].
+* *Banco de Dados:* MySQL.
 * *Backend:* PHP (Ponte de comunicação).
-* [cite_start]*Frontend:* HTML, CSS e JavaScript[cite: 28].
+* *Frontend:* HTML, CSS e JavaScript.
 
 ---
 
 ## 💾 Estrutura do Banco de Dados (MySQL)
-[cite_start]O banco de dados foi modelado com três entidades principais[cite: 15]:
-1. [cite_start]*Aluno:* Identificado por matrícula (Chave Primária) e nome[cite: 16].
-2. [cite_start]*Livro:* Contém título, autor, categoria e status (Chave Primária autoincremental)[cite: 17].
-3. [cite_start]*Empréstimo:* Tabela intermediária que conecta o Aluno ao Livro utilizando Chaves Estrangeiras, registrando a data de devolução[cite: 18].
+O banco de dados foi modelado com três entidades principais:
+1. *Aluno:* Identificado por matrícula (Chave Primária) e nome.
+2. *Livro:* Contém título, autor, categoria e status (Chave Primária autoincremental).
+3.*Empréstimo:* Tabela intermediária que conecta o Aluno ao Livro utilizando Chaves Estrangeiras, registrando a data de devolução.
 
 > 📝 O arquivo bd.sql na raiz do projeto já contém a estrutura completa das tabelas e os dados de teste (população inicial) de alunos, livros e empréstimos ativos para a demonstração do sistema.
 
@@ -47,10 +47,10 @@ Siga os passos abaixo para configurar o ambiente e conectar as suas telas:
 O arquivo conexao.php já está pronto na pasta php/ e realiza a abertura de portas com o banco de dados. Você não precisa alterá-lo.
 
 ### 3. Como fazer requisições a partir do JavaScript (Exemplo Prático)
-[cite_start]Para buscar livros ou solicitar renovações através das telas HTML[cite: 13], utilize a API fetch() do JavaScript apontando para os scripts PHP correspondentes.
+Para buscar livros ou solicitar renovações através das telas HTML, utilize a API fetch() do JavaScript apontando para os scripts PHP correspondentes.
 
-#### [cite_start]Exemplo: Consumindo a Barra de Pesquisa de Livros [cite: 13]
-[cite_start]Quando o aluno digitar na barra de busca[cite: 13], o seu script.js deve enviar o termo para o arquivo PHP de busca da seguinte forma:
+#### Exemplo: Consumindo a Barra de Pesquisa de Livros 
+Quando o aluno digitar na barra de busca, o seu script.js deve enviar o termo para o arquivo PHP de busca da seguinte forma:
 
 ```javascript
 // Função para buscar livros no banco de dados
