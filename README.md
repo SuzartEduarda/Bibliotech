@@ -1,6 +1,6 @@
 # 📚 Sistema BiblioTech
 
-[cite_start]O *BiblioTech* é um Sistema de Informação Web focado na gestão automatizada do acervo e empréstimos da *Biblioteca Central Dom Malan. O projeto visa substituir o controle manual feito por fichas de papel e planilhas soltas, otimizando o tempo de atendimento e garantindo o controle do estoque em tempo real.
+O *BiblioTech* é um Sistema de Informação Web focado na gestão automatizada do acervo e empréstimos da *Biblioteca Central Dom Malan. O projeto visa substituir o controle manual feito por fichas de papel e planilhas soltas, otimizando o tempo de atendimento e garantindo o controle do estoque em tempo real.
 
 ## 📊 Classificação do Sistema
 * *Tipo:* SPT (Sistema de Processamento de Transações).
